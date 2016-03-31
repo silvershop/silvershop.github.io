@@ -1,6 +1,5 @@
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
 	.device{left:20%;top:-36px;}
-	footer li{margin-right:10%;}
 	.feature-content{width:55%;}
 }
 @media screen and (max-width:991px){
@@ -15,8 +14,8 @@
 	.feature-content{width:60%;}
 }
 @media screen and (max-width:640px){
-	.use-btn{display:none;}
-	footer li{display:block;text-align:left;padding:20px 0;border-bottom:dashed 1px #c7cacc;margin-right:0!important;float:none;}
+	.use-btn{display:none;} 
+  	footer li{display:block;text-align:left;padding:20px 0;border-bottom:dashed 1px #c7cacc;margin-right:0!important;float:none;}
 	nav{margin-top:40px;}
 	.overlay ul{margin-left:0px;}
 	.overlay ul li a{padding:20px 0;min-width:120px;font-size:12px;}

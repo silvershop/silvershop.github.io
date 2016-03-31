@@ -440,6 +440,7 @@ a {
     -webkit-transition-property: color, border-color, background-color;
     transition-property: color, border-color, background-color;
 }
+
 .nopadding {
     margin: 0 !important;
     padding: 0 !important;
@@ -447,10 +448,17 @@ a {
 p {
     font-size: 14px;
     line-height: 25px;
+    font-weight: 300;
 }
+
+li {
+    font-weight: 300;
+}
+
 a {
-    color: #73d0da
+    color: #428BC9;
 }
+
 a:hover, a:focus {
     color: #73d0da;
     text-decoration: none;
@@ -1132,3 +1140,42 @@ Waypoints
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
+.support-content {
+    padding: 30px 0 50px;
+}
+
+.person {
+    padding-top: 20px;
+    position: relative;
+    min-height: 60px;
+    padding-left: 60px;
+}
+
+    .person h3 {
+        margin: 6px 0 0 0;
+    }
+
+    .person p {
+        margin: 0 0 5px 0;
+    }
+    
+        .person p a {
+            color: #333;
+        }
+
+    .person .thumb {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 46px;
+        height: 46px;
+        border: 3px solid #f1f1f1;
+        border-radius: 23px;
+    }
+
+    .person .thumb img {
+        width: 100%;
+        height: 100%;
+        border-radius: 23px;
+    }
