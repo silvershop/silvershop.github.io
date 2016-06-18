@@ -755,10 +755,16 @@ Features List
     color: #24374b;
     font-size: 20px;
 }
-.features-list p {
+.features-list p,
+.features-list ul {
     margin-bottom: 20px;
     color: #778899;
 }
+
+.features-list li {
+    margin: 0 0 5px 10px;
+}
+
 .feature-content {
     display: inline-block;
     margin-left: 0;

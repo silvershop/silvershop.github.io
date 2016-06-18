@@ -65,7 +65,9 @@
   		<div class="col-md-6">
   			<h2>Products &amp; Variations</h2>
 
-  			<p>Upload products into the CMS via the interface or in bulk via CSV. Each product is setup as a customizable Page within SilverStripe which can have content, images and any custom fields.</p>
+  			<p>Upload products into the CMS via the interface or in bulk via CSV. Each product is setup as a customizable <code>Page</code> subclass within SilverStripe. Out of the box CMS authors can input pricing, product information and images.</p>
+
+  			<p>Using standard SilverStripe extension hooks and PHP inheritance developers can extend all built in functionality and add any custom fields.</p>
 
   			<p>Product variation's such as color and size, can be added to the product with unique images and prices.</p>
   		</div>
@@ -73,7 +75,7 @@
   		<div class="col-md-6">
   			<h2>Customizable Checkout</h2>
 
-  			<p>
+  			<p>Tailor SilverShop to your individual requirements including support for multi-step checkouts, existing user logins or single page checkout. Drop in new <code>CheckoutComponent</code> instances and modify the entire user experience.</p>
   		</div>
   	</div>
 
@@ -82,35 +84,43 @@
 	        <h2>Coupons &amp; Discounts</h2>
 
 	        <p>Display discounts to users or provide unique coupon codes through a variety of configurations. Coupons can apply fixed price or percentage discounts to one or multiple products as well as entire cart orders.</p>
+
+	        <p><a href="https://github.com/silvershop/silvershop-discounts">More Information</a></p>
 	    </div>
 
 	    <div class="col-md-4">
 	        <h2>Flexible Shipping</h2>
-	        
+	        	
+	        <p>Add one of the out of the box shipping methods such as flat rate, distance or zoned based shipping fees or implement your own method for calculating shipping.</p>
+
+	        <p><a href="https://github.com/silvershop/silvershop-shipping">More Information</a></p>
 	    </div>
 
 	    <div class="col-md-4">
 	        <h2>Tax Calculation</h2>
+
+	        <p>Calculate Tax based on the users country or implement a flat rate across all your products. Display your prices and invoices both inclusive and exclusive of tax for accounting purposes.</p>
 	    </div>
 	</div>
     
     <div class="row">
-	    <div class="col-md-3">
+	    <div class="col-md-4">
 	        <h2>Translations</h2>
 
+	        <p>SilverShop supports internationalization (i18n) standards for both the front-end user experience and back-end shop interface.</p>
 	    </div>
 
-	    <div class="col-md-3">
+	    <div class="col-md-4">
 	        <h2>Payment</h2>
 
-	        <p>SilverShop integrates with the PHP standard payment gateway <a href="https://github.com/thephpleague/omnipay">Omnipay</a> which supports over 40 gateways such as PayPal, PaymentExpress, Stripe, Sage Payment and Authorize.Net</p>
+	        <p>SilverShop integrates with the PHP standard payment gateway <a href="https://github.com/thephpleague/omnipay">Omnipay</a> which supports over 40 gateways such as PayPal, PaymentExpress, Stripe, Sage Payment and Authorize.Net.</p>
 	    </div>
 
-	    <div class="col-md-3">
+	    <div class="col-md-4">
 	        <h2>Reporting</h2>
 
 	        <p>When the SilverStripe Reports module is installed, the following
-	        reports will be made available in the CMS.</p>
+	        reports will be made available in the CMS:</p>
 
 	        <ul>
 	        	<li>Customer Report</li>
@@ -121,14 +131,22 @@
     </div>
 
     <div class="row">
-	    <div class="col-md-3">
+	    <div class="col-md-4">
 	        <h2>Tested</h2>
 
+	        <p>SilverShop core and our supported modules all contain unit tests and run on Travis CI and Scrutinizer to ensure code is up to standard.</p>
 	    </div>
 
-	    <div class="col-md-3">
+	    <div class="col-md-4">
 	        <h2>Supported</h2>
 
+	        <p>SilverShop is supported by a <a href="/support/">core development team</a> who can answer any of your questions and investigate any bugs.</p>
+	    </div>
+
+	    <div class="col-md-4">
+	        <h2>Extensible</h2>
+
+	        <p>SilverShop supports all SilverStripe patterns such as <code>Injector</code>, <code>Extensions</code> and <code>Config</code> API's to make modifying the module as easy as possible.</p>
 	    </div>
     </div>
   </div>
@@ -143,8 +161,7 @@
           <li><a href="/features/">Features</a></li>
           <li><a href="http://demo.ss-shop.org/">Demo</a></li>
           <li><a href="/support/">Support</a></li>
-          <li><a href="/news/">News</a></li>
-          <li><a href="/docs/">Documentation</a></li>
+          <li><a href="https://github.com/silvershop/silvershop-core/tree/master/docs/en">Documentation</a></li>
           <li><a href="/download/">Download</a></li>
         </ul>
 
@@ -162,8 +179,7 @@
       <li><a href="http://demo.ss-shop.org/"><i class="fa fa-desktop"></i>Demo</a></li>
     </ul>
     <ul>
-      <li><a href="/news/"><i class="fa fa-newspaper-o"></i>News</a></li>
-      <li><a href="/docs/"><i class="fa fa-file-o"></i>Documentation</a></li>
+      <li><a href="https://github.com/silvershop/silvershop-core/tree/master/docs/en"><i class="fa fa-file-o"></i>Documentation</a></li>
       <li><a href="/download/"><i class="fa fa-download"></i>Download</a></li>
     </ul>
   </nav>
@@ -180,5 +196,15 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/min/scripts-min.js"></script>
 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79517552-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>
