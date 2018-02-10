@@ -5,4 +5,8 @@ changes:
 
  * Download the project
  * Run `bundle install`
- * Run `jekyll serve` to run the website.
+ * Run `bundle exec jekyll serve` to run the website.
+
+## Updating dependencies
+
+`bundle update`

@@ -445,10 +445,11 @@ a {
     margin: 0 !important;
     padding: 0 !important;
 }
+
 p {
     font-size: 14px;
     line-height: 25px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 li {
@@ -783,6 +784,11 @@ Features List
     font-size: 25px;
     line-height: 90px;
 }
+
+.features-list .col-md-6 p {
+    font-size: 16px;
+}
+
 .feature-icon i {
     color: #4e9ba3
 }
