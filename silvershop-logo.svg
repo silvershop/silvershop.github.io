@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="SilverShop">
+  <defs>
+    <linearGradient id="silvershop-bg" x1="100" y1="0" x2="100" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0EA4F4"/>
+      <stop offset="1" stop-color="#0E6BEB"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#silvershop-bg)"/>
+  <path fill="#fff" d="M151,59 L149,57 L133,57 L131,58 L128,68 L128,72 L124,76 L121,77 L48,77 L55,99 L55,102 L60,115 L60,128 L58,132 L58,135 L60,139 L64,142 L71,142 L75,139 L76,137 L76,118 L77,117 L109,117 L110,118 L110,137 L115,142 L123,142 L128,136 L127,118 L130,116 L130,111 L132,105 L132,100 L134,94 L137,74 L142,68 L151,66 L152,64 Z"/>
+  <path fill="#0E9BF3" d="M93,78 L76,92 L76,99 L85,107 L91,106 L92,113 L96,116 L112,104 L113,95 L104,87 L98,88 L97,81 Z"/>
+</svg>

@@ -1,103 +1,43 @@
----
-layout: default
----
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-<!-- open/close -->
-<header>
-  <section class="hero">
-    <div class="texture-overlay"></div>
-
-    <div class="container">
-      <div class="row nav-wrapper">
-        <div class="col-md-6 col-sm-6 col-xs-6 text-left">
-          <a href="/">SilverShop</a>
-        </div>
-
-        <div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
-          <p id="trigger-overlay">MENU <span class="nav_slide_button nav-toggle" href="#"><span></span></span></p>
-        </div>
-      </div>
-
-      <div class="row hero-content">
-        <div class="col-md-12">
-          <h1 class="animated fadeInDown">Open source e-commerce module for Silverstripe&nbsp;Framework</h1>
-
-          <a href="/download" class="use-btn animated fadeInUp">Download</a> <a href="#features" class="learn-btn animated fadeInUp">Learn more <i class="fa fa-arrow-down"></i></a>
-
-          <p class="animated fadeInUp">Latest Release: 3.1.0 (23rd Sept 2023). <a href="https://github.com/silvershop/silvershop-core/releases/tag/3.1.0">Release Notes</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-</header>
-
-<section class="features-list" id="features">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-
-        <div class="col-md-4 feature-1 wp2">
-          <div class="feature-icon">
-            <i class="fa fa-desktop"></i>
-          </div>
-          <div class="feature-content">
-            <h1>Responsive</h1>
-
-            <p>Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS frameworks available, Bootstrap out of the box or customize with your own templates.</p>
-          </div>
-        </div>
-        <div class="col-md-4 feature-2 wp2 delay-05s">
-          <div class="feature-icon">
-            <i class="fa fa-arrows"></i>
-          </div>
-          <div class="feature-content">
-            <h1>Extensible</h1>
-
-            <p>Tailor your shop to your needs. SilverShop has a wide range of supported extensions including Coupons, Shipping, Tax and PDF Invoices. Easily extend the modules to suit your business.</p>
-
-            <a href="/features" class="read-more-btn">More Features <i class="fa fa-chevron-circle-right"></i></a>
-          </div>
-        </div>
-        <div class="col-md-4 feature-3 wp2 delay-1s">
-          <div class="feature-icon">
-            <i class="fa fa-heart"></i>
-          </div>
-          <div class="feature-content">
-            <h1>Open Source</h1>
-            <p>SilverShop and supported modules are released free under the same BSD License as the SilverStripe framework. With an active community, you can be sure of support and regular updates.</p>
-            <a href="/support" class="read-more-btn">Support <i class="fa fa-chevron-circle-right"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="features-intro">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-6 nopadding features-intro-img">
-        <div class="features-bg">
-          <div class="texture-overlay"></div>
-          <div class="features-img wp1">
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 nopadding">
-        <div class="features-slider">
-            <ul class="slides" id="featuresSlider">
-              <li>
-                <h1><strong>Latest News</strong></h1>
-                <h2>SilverShop 4 available for Silverstripe 5</h2>
-                <p>We've just moved version 3 of SilverShop to a new branch and updated the mainline for Silverstripe 5 support. SilverShop 3.1.0 offers support for SilverStripe 4 and the latest bug fixes, SilverShop 4.x-dev offers support for latest PHP and Silverstripe versions.</p>
-              </li>
-            </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SilverShop is a BSD-licensed e-commerce module for Silverstripe CMS: product catalog, cart and checkout, payments, and optional add-ons. Free, open source, install with Composer."
+    />
+    <meta name="theme-color" content="#0d0d0f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Inter:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/iconsax-font-icon@1.1.0/dist/icons.css"
+      rel="stylesheet"
+    />
+    <title>SilverShop — Open-source e-commerce for Silverstripe CMS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+      ga("create", "UA-79517552-1", "auto");
+    </script>
+  </body>
+</html>

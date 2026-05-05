@@ -1,3 +1,5 @@
-.sass-cache
-.jekyll-metadata
 .DS_Store
+node_modules
+dist
+.vite
+*.tsbuildinfo
