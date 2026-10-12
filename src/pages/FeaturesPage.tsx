@@ -291,6 +291,20 @@ export function FeaturesPage() {
               <FeatureDetailCard key={id} {...card} />
             ))}
           </div>
+
+          <hr />
+
+          <header className="features-page__section-head">
+            <h2 className="features-page__section-title">Community extensions</h2>
+            <p className="features-page__section-lead">
+              Need search, reviews, wishlists, SEO, invoicing or newsletters? Browse the{" "}
+              <Link to="/extensions">extensions directory</Link> for community-built modules, with Composer keys and
+              links to each repository.
+            </p>
+          </header>
+          <Link to="/extensions" className="btn btn--primary">
+            Browse extensions
+          </Link>
         </div>
       </section>
     </>
