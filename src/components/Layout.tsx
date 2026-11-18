@@ -74,6 +74,7 @@ export function Layout() {
               Home
             </NavLink>
             <NavLink to="/features">Features</NavLink>
+            <NavLink to="/extensions">Extensions</NavLink>
             <NavLink to="/support">Support</NavLink>
             <a href={DOCS_URL} className="site-nav__link--external">
               Documentation
@@ -121,6 +122,9 @@ export function Layout() {
               <Link to="/features">Features</Link>
             </li>
             <li>
+              <Link to="/extensions">Extensions</Link>
+            </li>
+            <li>
               <a href={DEMO_URL}>Demo</a>
             </li>
             <li>
@@ -152,6 +156,11 @@ export function Layout() {
             <li>
               <NavLink to="/features" onClick={close}>
                 <i className="icon-shopping-cart icon-before" aria-hidden="true"></i> Features
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/extensions" onClick={close}>
+                <i className="icon-layer icon-before" aria-hidden="true"></i> Extensions
               </NavLink>
             </li>
             <li>

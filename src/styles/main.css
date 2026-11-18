@@ -566,14 +566,38 @@ body.nav-open {
 }
 
 .btn--primary {
+  background: var(--color-brand-blue);
+  color: #fff;
+  border-color: var(--color-brand-blue);
+}
+
+.btn--primary:hover {
+  background: color-mix(in srgb, var(--color-brand-blue) 82%, #000);
+  border-color: color-mix(in srgb, var(--color-brand-blue) 82%, #000);
+  color: #fff;
+}
+
+.btn--primary:focus-visible {
+  outline: 2px solid var(--color-brand-blue);
+  outline-offset: 2px;
+}
+
+/* Light primary on dark hero */
+.hero .btn--primary {
   background: #fff;
   color: var(--color-bg-inverse);
   border-color: #fff;
 }
 
-.btn--primary:hover {
+.hero .btn--primary:hover {
   background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
   color: var(--color-bg-inverse);
+}
+
+.hero .btn--primary:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 
 .btn--ghost {

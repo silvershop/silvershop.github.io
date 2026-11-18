@@ -6,7 +6,7 @@ import { extensions, providerAvatarUrl, type Extension } from "../data/extension
 export const extensionsRouteHandle = {
   documentTitle: "Extensions — Community SilverShop modules",
   metaDescription:
-    "Community-built SilverShop extensions for Silverstripe CMS: search, reviews, wishlists, SEO, invoicing, newsletters, shipping labels and more, with Composer keys and links to each repository.",
+    "SilverShop Suite community extensions for Silverstripe CMS 6: search, reviews, wishlists, SEO, invoicing, newsletters, shipping labels and more, with Composer keys and links to each repository.",
 };
 
 const ALL_PROVIDERS = "";
@@ -38,15 +38,16 @@ export function ExtensionsPage() {
     <>
       <PageHero
         title="Extensions"
-        introduction="Community-maintained modules that add to SilverShop: search, reviews, SEO, invoicing, newsletters and more."
+        introduction="SilverShop Suite modules that extend SilverShop on SilverStripe CMS 6: search, reviews, SEO, invoicing, newsletters and more."
       />
       <section className="page-content">
         <div className="container">
           <header className="features-page__section-head">
             <h2 className="features-page__section-title">Community extensions</h2>
             <p className="features-page__section-lead">
-              Install any of these with Composer using the module key. These modules are maintained by their authors,
-              not the core team, so check each repository for compatibility and status. For the official packages, see{" "}
+              Install any of these with Composer using the module key. Modules are published under{" "}
+              <a href="https://github.com/silvershop-suite">silvershop-suite</a>; check each repository for
+              compatibility and status. For the official <code>silvershop/*</code> packages, see{" "}
               <Link to="/features">Features</Link>.
             </p>
           </header>
