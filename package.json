@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/generate-brand-assets.mjs && vite",
-    "build": "node scripts/generate-brand-assets.mjs && tsc -b && vite build",
+    "build": "node scripts/generate-brand-assets.mjs && tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
